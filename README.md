@@ -167,7 +167,6 @@ Para este problema lo que se hizo fue hacer que existiera una variable la cual s
 ### 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
 ```py
 # variables
-
 a=float(input("ingrese un numero: "))
 b=float(input("ingrese otro numero: "))
 c=float(input("ingrese otro numero mas: "))
@@ -175,3 +174,242 @@ d=float(input("ingrese otro numero: "))
 e=float(input("ingrese el ultimo numero: "))
 ```
 lo primero que hay que hacer es definir las variables que va a usar el programa.
+
+#### 7.1 El promedio
+```py
+# Calcular el promedio
+print("el promedio es: "+str((a+b+c+d+e)/5))
+```
+Para cálcular el promedio de 5 números lo que hay que hacer es sumar los valores de todos estas variables y dividirlas entre 5. Algo bastante simple.
+
+#### 7.2 La mediana
+```py
+if a<=b and a<=c and a<=d and a<=e:
+    if b<=c and b<=d and b<=e:
+        if c<=d and c<=e:
+            print(" la mediana es "+str(c))
+        elif d<=c and d<=e:
+            print("la mediana es "+str(d))
+        else:
+            print("la mediana es "+str(e))
+    elif c<=b and c<=d and c<=e:
+        if b<=d and b<=e:
+            print("la mediana es "+str(b))
+        elif d<=b and d<=e:
+            print("la mediana es "+str(d))
+        else:
+            print("la mediana es "+str(e))
+    elif d<=b and d<=c and d<=e:
+        if b<=c and b<=e:
+            print("la mediana es "+str(b))
+        elif c<=b and c<=e:
+            print("la mediana es "+str(c))
+        else:
+            print("la mediana es "+str(e))
+    else:
+        if b<=c and b<=d:
+            print("la mediana es "+str(b))
+        elif c<=b and c<=d:
+            print("la mediana es "+str(c))
+        else:
+            print("la mediana es "+str(d))
+
+elif b<=a and b<=c and b<=d and b<=e:
+    if a<=c and a<=d and a<=e:
+        if c<=d and c<=e:
+            print(" la mediana es "+str(c))
+        elif d<=c and d<=e:
+            print("la mediana es "+str(d))
+        else:
+            print("la mediana es "+str(e))
+    elif c<=a and c<=d and c<=e:
+        if a<=d and a<=e:
+            print("la mediana es "+str(a))
+        elif d<=a and d<=e:
+            print("la mediana es "+str(d))
+        else:
+            print("la mediana es "+str(e))
+    elif d<=a and d<=c and d<=e:
+        if a<=c and a<=e:
+            print("la mediana es "+str(a))
+        elif c<=a and c<=e:
+            print("la mediana es "+str(c))
+        else:
+            print("la mediana es "+str(e))
+    else:
+        if a<=c and a<=d:
+            print("la mediana es "+str(a))
+        elif c<=a and c<=d:
+            print("la mediana es "+str(c))
+        else:
+            print("la mediana es "+str(d))
+
+elif c<=b and c<=a and c<=d and c<=e:
+    if b<=a and b<=d and b<=e:
+        if a<=d and a<=e:
+            print(" la mediana es "+str(a))
+        elif d<=a and d<=e:
+            print("la mediana es "+str(d))
+        else:
+            print("la mediana es "+str(e))
+    elif a<=b and a<=d and a<=e:
+        if b<=d and b<=e:
+            print("la mediana es "+str(b))
+        elif d<=b and d<=e:
+            print("la mediana es "+str(d))
+        else:
+            print("la mediana es "+str(e))
+    elif d<=b and d<=a and d<=e:
+        if b<=a and b<=e:
+            print("la mediana es "+str(b))
+        elif a<=b and a<=e:
+            print("la mediana es "+str(a))
+        else:
+            print("la mediana es "+str(e))
+    else:
+        if b<=a and b<=d:
+            print("la mediana es "+str(b))
+        elif a<=b and a<=d:
+            print("la mediana es "+str(a))
+        else:
+            print("la mediana es "+str(d))
+
+elif d<=b and d<=c and d<=a and d<=e:
+    if b<=c and b<=a and b<=e:
+        if c<=a and c<=e:
+            print(" la mediana es "+str(c))
+        elif a<=c and a<=e:
+            print("la mediana es "+str(a))
+        else:
+            print("la mediana es "+str(e))
+    elif c<=b and c<=a and c<=e:
+        if b<=a and b<=e:
+            print("la mediana es "+str(b))
+        elif a<=b and a<=e:
+            print("la mediana es "+str(a))
+        else:
+            print("la mediana es "+str(e))
+    elif a<=b and a<=c and a<=e:
+        if b<=c and b<=e:
+            print("la mediana es "+str(b))
+        elif c<=b and c<=e:
+            print("la mediana es "+str(c))
+        else:
+            print("la mediana es "+str(e))
+    else:
+        if b<=c and b<=a:
+            print("la mediana es "+str(b))
+        elif c<=b and c<=a:
+            print("la mediana es "+str(c))
+        else:
+            print("la mediana es "+str(a))
+
+else:
+    if b<=c and b<=d and b<=a:
+        if c<=d and c<=a:
+            print(" la mediana es "+str(c))
+        elif d<=c and d<=a:
+            print("la mediana es "+str(d))
+        else:
+            print("la mediana es "+str(a))
+    elif c<=b and c<=d and c<=a:
+        if b<=d and b<=a:
+            print("la mediana es "+str(b))
+        elif d<=b and d<=a:
+            print("la mediana es "+str(d))
+        else:
+            print("la mediana es "+str(a))
+    elif d<=b and d<=c and d<=a:
+        if b<=c and b<=a:
+            print("la mediana es "+str(b))
+        elif c<=b and c<=a:
+            print("la mediana es "+str(c))
+        else:
+            print("la mediana es "+str(a))
+    else:
+        if b<=c and b<=d:
+            print("la mediana es "+str(b))
+        elif c<=b and c<=d:
+            print("la mediana es "+str(c))
+        else:
+            print("la mediana es "+str(d))
+```
+Este código ya es un poco mas complejo ya que toca especificar todas las combinaciones que hay de que un número sea mayor que dos de la lista, y menor que los otros dos. Saliendo así un total de 48 convinaciones entre los 5 números para determinar la mediana.
+
+#### 7.3 El promedio multiplicativo
+```py
+print("el promedio multiplicativo es: "+str((a*b*c*d*e)**(0.2)))
+```
+Similar al código de "El promedio" este en lo único que difiere es que en vez de sumar las variables hay que multiplicarlas y ese producto hay que aplicarle la raiz de 5, ya que son un total de 5 elementos.
+
+#### 7.4 y 7.5 Organizar de manera ascendente y descente ( estos dos son muy largos asi que estaran en un archivo .py)
+Para ordenar de mayor a menor y de menor a mayor hay que hacer largas cadenas de condicionales que comparen las variables. Lo que hicimos fue usar comparaciones de <= para ordenar de manera ascendente y el >= para el descendente.
+
+#### 7.6 La potencia del mayor número elevado al menor número
+```py
+if a>= b and a>=c and a>=d and a>=e:
+    if b<=c and b<=d and b<=e and b<=a:
+        print("la potencia del numero mayor elevada al menor es: "+str(a**b))
+    elif c<=b and c<=d and c<=e and c<=a:
+        print("la potencia del numero mayor elevada al menor es: "+str(a**c))
+    elif d<=b and d<=c and d<=e and d<=a:
+        print("la potencia del numero mayor elevada al menor es: "+str(a**d))
+    else:
+        print("la potencia del numero mayor elevada al menor es: "+str(a**e))
+
+elif b>a and b>c and b>d and b>e:
+    if a<=c and a<=d and a<=e and a<=b:
+        print("la potencia del numero mayor elevada al menor es: "+str(b**a))
+    elif c<=a and c<=d and c<=e and c<=b:
+        print("la potencia del numero mayor elevada al menor es: "+str(b**c))
+    elif d<=a and d<=c and d<=e and d<=b:
+        print("la potencia del numero mayor elevada al menor es: "+str(b**d))
+    else:
+        print("la potencia del numero mayor elevada al menor es: "+str(b**e))
+
+elif c>a and c>b and c>d and c>e:
+    if a<=b and a<=d and a<=e and a<=c:
+        print("la potencia del numero mayor elevada al menor es: "+str(c**a))
+    elif b<=a and b<=d and b<=e and b<=c:
+        print("la potencia del numero mayor elevada al menor es: "+str(c**b))
+    elif d<=a and d<=b and d<=e and d<=c:
+        print("la potencia del numero mayor elevada al menor es: "+str(c**d))
+    else:
+        print("la potencia del numero mayor elevada al menor es: "+str(c**e))
+
+elif d>a and d>b and d>c and d>e:
+    if a<=b and a<=c and a<=e and a<=d:
+        print("la potencia del numero mayor elevada al menor es: "+str(d**a))
+    elif b<=a and b<=c and b<=e and b<=d:
+        print("la potencia del numero mayor elevada al menor es: "+str(d**b))
+    elif c<=a and c<=b and c<=e and c<=d:
+        print("la potencia del numero mayor elevada al menor es: "+str(d**c))
+    else:
+        print("la potencia del numero mayor elevada al menor es: "+str(d**e))
+
+else:
+    if a<=b and a<=c and a<=d and a<=e:
+        print("la potencia del numero mayor elevada al menor es: "+str(e**a))
+    elif b<=a and b<=c and b<=d and b<=e:
+        print("la potencia del numero mayor elevada al menor es: "+str(e**b))
+    elif c<=a and c<=b and c<=d and c<=e:
+        print("la potencia del numero mayor elevada al menor es: "+str(e**c))
+    else:
+        print("la potencia del numero mayor elevada al menor es: "+str(e**d))
+```
+En este caso para determinar cual es la base toca hacer una comparación de >= o solamente > y para determinar el exponente hay que hacer comparaciones de <=. El resto de las especificaciones es que hay que hacer un total de 20 combinaciones, cada letra, es decir 5, tiene 4 conbinaciones posibles.
+
+#### 7.7 La raíz cúbica del menor número
+```py
+if a<= b and a<=c and a<=d and a<=e:
+    print("la raiz cubica del menor numero es: "+str(a**(1/3)))
+elif b<a and b<c and b<d and b<e:
+    print("la raiz cubica del menor numero es: "+str(b**(1/3)))
+elif c<a and c<b and c<d and c<e:
+    print("la raiz cubica del menor numero es: "+str(c**(1/3)))
+elif d<a and d<b and d<c and d<e:
+    print("la raiz cubica del menor numero es: "+str(d**(1/3)))
+else:
+    print("la raiz cubica del menor numero es: "+str(e**(1/3)))
+```
+En este problema lo que hay que hacer es poner todas las posibilidades de que una variable sea el número menor en comparacion a otros 4, y luego seguir el sencillo paso de aplicarle la raíz cúbica a este.
