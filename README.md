@@ -17,6 +17,8 @@ Jeyson Fernando Romero    - Bryan Felipe Jaime    - Juan Manuel Coronell
 
    ![image](https://github.com/JMC020406/Taller-1/assets/159207395/48abc5bb-d5cd-4907-98ef-46913389955e)
 
+##### 3. Bryan Felipe Jaime
+   
    <br>
 
 
@@ -413,3 +415,5 @@ else:
     print("la raiz cubica del menor numero es: "+str(e**(1/3)))
 ```
 En este problema lo que hay que hacer es poner todas las posibilidades de que una variable sea el número menor en comparacion a otros 4, y luego seguir el sencillo paso de aplicarle la raíz cúbica a este.
+
+### 8. 
