@@ -467,7 +467,7 @@ elif 30*10**18 <= frecuencia:
 Comenzamos entendiendo el problema y planeando una estrategia para resolverlo, como tenemos varias variables que en este caso son las partes del espectro electromagnetico, y dependiendo de el dato que nos arroje el usuario va a imprimir una cosa o otra, entonces utilizamos if,else y elif, ya que nos permite imprimir una cosa u otra dada una condicion, en este caso un rango de valores de la frecuencia de las ondas.
 
 ## 9. Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
-```
+```py
 #Capitales de paises de America
 pais=input("Ingrese el nombre de un pais de America: ")
 pais = pais.lower()
@@ -551,7 +551,7 @@ El tiempo que le tomaría a la luz recorrer la distancia.
 El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
 El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
 El tiempo que le tomaría a Bolt recorrer la distancia.
-```
+```py
 #Dada una distancia calcular tiempo que tardaria en recorrerla distintas variables
 distancia=float(input("Ingrese los digitos de una distancia en metros: "))
 distancia_luz= distancia/299792458
