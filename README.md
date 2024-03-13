@@ -110,12 +110,12 @@ else:
 
 ```mermaid
 graph TD;
-  A(inicio)-->B(Leer numero1)
-  B-->C(Leer numero2)
-  C-->D(¿Es numero2 != 0)
-  D-->|si|E(¿Es numero1 % numero2 = 0?)
-  D-->|No|F(numero1 no es multiplo de numero2)
-  E-->|si|G(numero1 es multiplo de numero2)
+  A(Inicio)-->B(Definir numero1)
+  B-->C(Definir numero2)
+  C-->D{¿Es numero2 != 0}
+  D-->|si|E{¿Es numero1 % numero2 = 0?}
+  D-->|No|F(Escribir : numero1 no es multiplo de numero2)
+  E-->|si|G(Escribir : numero1 es multiplo de numero2)
   E-->|no|F
   F-->H(Fin)
   G-->H(Fin)
@@ -466,6 +466,18 @@ elif 30*10**18 <= frecuencia:
 ```
 Comenzamos entendiendo el problema y planeando una estrategia para resolverlo, como tenemos varias variables que en este caso son las partes del espectro electromagnetico, y dependiendo de el dato que nos arroje el usuario va a imprimir una cosa o otra, entonces utilizamos if,else y elif, ya que nos permite imprimir una cosa u otra dada una condicion, en este caso un rango de valores de la frecuencia de las ondas.
 
+### Diagrama de flujo
+```mermaid
+graph TD;
+  A(Inicio)-->B(Definir frecuencia de onda en Hz)
+  B-->C(Definir intervalos de las diferentes partes
+ del espectro electromagnetico)
+  C-->D(Buscar un intervalo al cual pertenezca la
+ frecuencia de onda elegida)
+  D--> E(Escribir : la frecuencia se enuentra en x parte del espectro electromagnetico)
+  E-->F(Fin)
+```
+
 ## 9. Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
 ```py
 #Capitales de paises de America
@@ -545,6 +557,18 @@ else:
     print("Pais no identificado")
 ```
 Para la solucion de este problema utilizamos una metodologia similar a la del punto #8, ya que establecemos una condicion que debe cumplir el dato que ingrese el usuario, en este caso es una condicion restringido, ya que existe un unico dato que puede ingresar el usuario para que arroje la respuesta determinada. Además utilizamos al inicio una funcion que nos transfrome los datos que ingrese el usuario a minusculas.
+
+### Diagrama de flujo
+```mermaid
+graph TD;
+  A(Inicio)-->B(Definir pais)
+  B-->G(Poner pais en lower_case)
+  G-->C{¿El pais pertenece a America?}
+  C-->|si|D(Retornar : la capital del pais)
+  C-->|no|E(Retornar : pais no identificado)
+  D-->F(Fin)
+  E-->F
+```
 ## 10. Escriba un programa que dada una distancia calcule:
 
 El tiempo que le tomaría a la luz recorrer la distancia.
