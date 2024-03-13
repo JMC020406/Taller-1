@@ -106,8 +106,20 @@ else:
 
 -Si se cumple la condición anterior, el programa imprime un mensaje indicando que el primer número es múltiplo del segundo. De lo contrario, imprime un mensaje indicando lo contrario.
 
-![image](https://github.com/JeysonRomero/Taller-1/assets/159095091/9355def5-c55b-4c6b-ad46-5ce4927bc237)
+### Diagrama de flujo
 
+```mermaid
+graph TD;
+  A(inicio)-->B(Leer numero1)
+  B-->C(Leer numero2)
+  C-->D(¿Es numero2 != 0)
+  D-->|si|E(¿Es numero1 % numero2 = 0?)
+  D-->|No|F(numero1 no es multiplo de numero2)
+  E-->|si|G(numero1 es multiplo de numero2)
+  E-->|no|F
+  F-->H(Fin)
+  G-->H(Fin)
+```
 
 ## 5.Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 ```py
