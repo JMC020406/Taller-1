@@ -334,7 +334,7 @@ else:
         else:
             print("la mediana es "+str(d))
 ```
-Este código ya es un poco mas complejo ya que toca especificar todas las combinaciones que hay de que un número sea mayor que dos de la lista, y menor que los otros dos. Saliendo así un total de 48 convinaciones entre los 5 números para determinar la mediana.
+Este código ya es un poco mas complejo ya que toca especificar todas las combinaciones que hay de que un número sea mayor que dos de la lista, y menor que los otros dos. Saliendo así un total de 55 convinaciones entre los 5 números para determinar la mediana.
 
 #### 7.3 El promedio multiplicativo
 ```py
@@ -342,7 +342,7 @@ print("el promedio multiplicativo es: "+str((a*b*c*d*e)**(0.2)))
 ```
 Similar al código de "El promedio" este en lo único que difiere es que en vez de sumar las variables hay que multiplicarlas y ese producto hay que aplicarle la raiz de 5, ya que son un total de 5 elementos.
 
-#### 7.4 y 7.5 Organizar de manera ascendente y descente ( estos dos son muy largos asi que estaran en un archivo .py)
+#### 7.4 y 7.5 Organizar de manera ascendente y descente ( estos dos son muy largos asi que estaran únicamente en el Notebook de los puntos impares)
 Para ordenar de mayor a menor y de menor a mayor hay que hacer largas cadenas de condicionales que comparen las variables. Lo que hicimos fue usar comparaciones de <= para ordenar de manera ascendente y el >= para el descendente.
 
 #### 7.6 La potencia del mayor número elevado al menor número
