@@ -429,4 +429,139 @@ else:
 ```
 En este problema lo que hay que hacer es poner todas las posibilidades de que una variable sea el número menor en comparacion a otros 4, y luego seguir el sencillo paso de aplicarle la raíz cúbica a este.
 
-## 8. 
+## 8. Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
+```py
+#Calcular el espectro electromagnetico en que se encuentra la onda ingresada
+frecuencia= float(input("Ingrese los digitos de la frecuencia de una onda en Hz: "))
+if  30*10**3 >= frecuencia:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico de Muy Baja Frecuencia - Radio.")
+elif 30*10**3 <= frecuencia < 650*10**3:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico de Onda Larga - Radio.")
+elif 650*10*3 <= frecuencia < 1.7*10**6:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico de Onda Media - Radio.")
+elif 1.7*10**6 <= frecuencia < 30*10**6:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Onda Corta - Radio.")
+elif 30*10**6 <= frecuencia < 300*10**6:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Muy Alta Frecuencia - Radio.")
+elif 300*10**6 <= frecuencia < 3*10**9:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Ultra Alta Frecuencia - Radio.")
+elif 3*10**9 <= frecuencia < 300*10*9:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Microondas.")
+elif 300*10**9 <= frecuencia < 6*10**12:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Infrarojo Lejano.")
+elif 6*10**12 <= frecuencia < 120*10**12:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Infrarojo Medio.")
+elif 120*10**12 <= frecuencia < 384*10**12:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Infrarrojo Cercano.")
+elif 384*10**12 <= frecuencia < 7.89*10**14:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Visible.")
+elif 7.89*10**14 <= frecuencia < 1.5*10**15:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Ultravioleta Cercano.")
+elif 1.5*10**15 <= frecuencia < 30*10**15:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico Ultravioleta Lejano.")
+elif 30*10**15 <= frecuencia< 30*10**18:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico de Rayos X.")
+elif 30*10**18 <= frecuencia:
+    print("La frecuencia se encuentra en la parte del espectro electromagnetico de Rayos Gamma.")
+```
+Comenzamos entendiendo el problema y planeando una estrategia para resolverlo, como tenemos varias variables que en este caso son las partes del espectro electromagnetico, y dependiendo de el dato que nos arroje el usuario va a imprimir una cosa o otra, entonces utilizamos if,else y elif, ya que nos permite imprimir una cosa u otra dada una condicion, en este caso un rango de valores de la frecuencia de las ondas.
+
+## 9. Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
+```
+#Capitales de paises de America
+pais=input("Ingrese el nombre de un pais de America: ")
+pais = pais.lower()
+if pais== "antigua y barbuda":
+    print("La capital del pais es Saint Jhons")
+elif pais=="argentina":
+    print("La capital del pais es Buenos Aires")
+elif pais=="bahamas":
+    print("La capital del pais es Nasáu")
+elif pais=="barbados":
+    print("La capital del pais es Bridgetown")
+elif pais=="belice":
+    print("La capital del pais es Belmopán")
+elif pais=="Bolivia":
+    print("La capital del pais es Sucre")
+elif pais=="brazil":
+    print("La capitl del pais es Brasilia")
+elif pais=="canadá":
+    print("La capital del pais es Ottawa")
+elif pais=="chile":
+    print("La capital del pais es Santiago de Chile")
+elif pais=="colombia":
+    print("La capital del pais es Bogotá")
+elif pais=="costa rica":
+    print("La capital del pais es San José")
+elif pais=="cuba":
+    print("La capital del pais es La Habana")
+elif pais=="dominica":
+    print("La capital del pais es Roseau")
+elif pais=="ecuador":
+    print("La capital del pais es Quito")
+elif pais=="el salvador":
+    print("La capital del pais es San salvador")
+elif pais=="estados unidos":
+    print("La capital del pais es Washington D.C")
+elif pais=="granada":
+    print("La capital del pais es Saint George")
+elif pais=="guatemala":
+    print("La capital del pais es Ciudad de Guatemala ")
+elif pais=="guyana":
+    print("La capital del pais es Georgetown")
+elif pais=="haití":
+    print("La capital del pais es Puerto Príncipe")
+elif pais=="honduras":
+    print("La capital del pais es Tegucigalpa")
+elif pais=="jamaica":
+    print("La capital del pais es Kingston")
+elif pais=="méxico":
+    print("La capital del pais es Ciudad de México")
+elif pais=="nicaragua":
+    print("La capital del pais es Managua")
+elif pais=="panamá":
+    print("La capital del pais es Ciudad de Panamá")
+elif pais=="paraguay":
+    print("La capital del pais es Asunción")
+elif pais=="perú":
+    print("La capital del pais es Lima")
+elif pais=="república dominicana":
+    print("La capital del pais es Santo Domingo")
+elif pais=="san cristóbal y nieves":
+    print("La capital del pais es Basseterre")
+elif pais=="san Vicente y las Granadinas":
+    print("La capital del pais es Kingstown")
+elif pais=="santa Lucía":
+    print("La capital del pais es Castries")
+elif pais=="surinam":
+    print("La capital del pais es Paramaribo")
+elif pais=="trinidad y tobago":
+    print("La capital del pais es Puerto España")
+elif pais=="uruguay":
+    print("La capital del pais es Montevideo")
+elif pais=="venezuela":
+    print("La capital del pais es Caracas")
+else:
+    print("Pais no identificado")
+```
+Para la solucion de este problema utilizamos una metodologia similar a la del punto #8, ya que establecemos una condicion que debe cumplir el dato que ingrese el usuario, en este caso es una condicion restringido, ya que existe un unico dato que puede ingresar el usuario para que arroje la respuesta determinada. Además utilizamos al inicio una funcion que nos transfrome los datos que ingrese el usuario a minusculas.
+## 10. Escriba un programa que dada una distancia calcule:
+
+El tiempo que le tomaría a la luz recorrer la distancia.
+El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
+El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
+El tiempo que le tomaría a Bolt recorrer la distancia.
+```
+#Dada una distancia calcular tiempo que tardaria en recorrerla distintas variables
+distancia=float(input("Ingrese los digitos de una distancia en metros: "))
+distancia_luz= distancia/299792458
+distancia_sonido= distancia/343.2
+distancia_carro= distancia/141.11
+distancia_bolt= distancia/10.44
+print("Tiempo que le tomaria a la luz en el vacio recorrer esa distancia es", distancia_luz, "segundos")
+print("Tiempo que le tomaria a el sonido en el aire recorrer esa distancia es", distancia_sonido, "segundos")
+print("Tiempo que le tomaria a el Shelby Tuatara, el carro comercial mas rapido del mundo recorrer esa distancia es", distancia_carro, "segundos")
+print("Tiempo que le tomaria a Usain Bolt recorrer esa distancia es de", distancia_bolt, "segundos")
+```
+Este problema lo resolvemos estableciendo que el usuario pueda ingresar numeros decimales, y asi mismo el programa arroje numeros decimales, despues establecemos un variable para cada situacion estableciendo el calculo de el dato que ingrese el ususario sobre la velocidad para arrojar el tiempo. Finalmente imprimimos cada variable acompañado del texto adecuado.
+
