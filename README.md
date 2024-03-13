@@ -165,3 +165,13 @@ else:
 Para este problema lo que se hizo fue hacer que existiera una variable la cual se pudiera determinar, luego se transforma esa variable con la palabra reservada ord() que nos pasa nuestra variable al código ASCII. Una vez se determina que valor tiene en el código ASCII, este se compara con todas las posibilidades que hay de vocales; incluyendo las variables de mayúsculas y minúsculas. Si en algunos de los condicionales es verdadero la computador escribira que "la letra elegida es una vocal", si no, la computadora devolvera la respuesta de "la letra elegida es una consonante".
 
 ### 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
+```py
+# variables
+
+a=float(input("ingrese un numero: "))
+b=float(input("ingrese otro numero: "))
+c=float(input("ingrese otro numero mas: "))
+d=float(input("ingrese otro numero: "))
+e=float(input("ingrese el ultimo numero: "))
+```
+lo primero que hay que hacer es definir las variables que va a usar el programa.
