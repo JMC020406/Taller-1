@@ -18,7 +18,7 @@ Jeyson Fernando Romero    - Bryan Felipe Jaime    - Juan Manuel Coronell
    ![image](https://github.com/JMC020406/Taller-1/assets/159207395/48abc5bb-d5cd-4907-98ef-46913389955e)
 
 ##### 3. Bryan Felipe Jaime
-   (https://github.com/JMC020406/Taller-1/blob/main/CapturaQuiz1.png) 
+   ![imagen](https://github.com/JMC020406/Taller-1/blob/main/CapturaQuiz1.png) 
    
    <br>
 
