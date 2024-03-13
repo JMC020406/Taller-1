@@ -77,7 +77,7 @@ else:
 
 -Finalmente, imprime un mensaje indicando si el número es par o impar,utilizando la instrucción print().
 
-### 4.Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
+## 4.Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
 
 
 <br>
@@ -108,7 +108,7 @@ else:
 ![image](https://github.com/JeysonRomero/Taller-1/assets/159095091/9355def5-c55b-4c6b-ad46-5ce4927bc237)
 
 
-### 5.Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
+## 5.Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 ```py
 # Problema de los 3 numeros
 a=float(input("ingrese el primer sumando: "))
@@ -126,7 +126,7 @@ else:
 ```
 la solución a este problema fue primero definir las 3 variables numéricas reales que va a usar la computadora en su proceso de analisis. Una vez el emisor haya dado sus 3 valores para las variables se empezara el procedimiento de analisis, empezando por ver si la sumatoria de los dos primeros números es menor al tercer número, si no es así, entonces se analizara si la suma de los dos primeros números es mayor que el tercero, y si ninguna de las dos condiciones se cumple la computador devolvera la respuesta que la suma de los dos primeros es igual al tercer número. 
 
-### 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
+## 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 ```py
 # Problema de vocales y consonantes
 letra=(input("ingrese una letra cualquiera: "))
@@ -166,7 +166,7 @@ else:
 ```
 Para este problema lo que se hizo fue hacer que existiera una variable la cual se pudiera determinar, luego se transforma esa variable con la palabra reservada ord() que nos pasa nuestra variable al código ASCII. Una vez se determina que valor tiene en el código ASCII, este se compara con todas las posibilidades que hay de vocales; incluyendo las variables de mayúsculas y minúsculas. Si en algunos de los condicionales es verdadero la computador escribira que "la letra elegida es una vocal", si no, la computadora devolvera la respuesta de "la letra elegida es una consonante".
 
-### 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
+## 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
 ```py
 # variables
 a=float(input("ingrese un numero: "))
@@ -416,4 +416,4 @@ else:
 ```
 En este problema lo que hay que hacer es poner todas las posibilidades de que una variable sea el número menor en comparacion a otros 4, y luego seguir el sencillo paso de aplicarle la raíz cúbica a este.
 
-### 8. 
+## 8. 
