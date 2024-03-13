@@ -3,7 +3,7 @@
 ![Los LegoCoders](https://github.com/JMC020406/Taller-1/assets/159207395/1a07492a-d8da-4634-bc80-309179f38158)
 
 ### Integrantes
-Jeyson Fernando Romero    - Bryan Felipe Jaime    - Juan Manuel Coronell
+Jeyson Fernando Romero    - Bryan Felipe Jaime Diaz   - Juan Manuel Coronell
  <br>
 
 ## Resultados del quiz
@@ -17,8 +17,9 @@ Jeyson Fernando Romero    - Bryan Felipe Jaime    - Juan Manuel Coronell
 
    ![image](https://github.com/JMC020406/Taller-1/assets/159207395/48abc5bb-d5cd-4907-98ef-46913389955e)
 
-##### 3. Bryan Felipe Jaime
-   ![imagen](https://github.com/JMC020406/Taller-1/blob/main/CapturaQuiz1.png) 
+##### 3. Bryan Felipe Jaime Diaz
+   ![CapturaQuiz1](https://github.com/JMC020406/Taller-1/assets/159057549/b259221f-c835-4441-b542-8ed2ae210d6f)
+
    
    <br>
 
